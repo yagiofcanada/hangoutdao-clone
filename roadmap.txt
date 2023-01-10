@@ -1,0 +1,9 @@
+1. Create Header & Menu
+2. Create Banner
+3. Create About
+4. Create Benefits
+5. Create Success Stories
+6. Create Prrevious Collaborations
+7. Create Partners
+8. Create Team
+9. Create Footer
