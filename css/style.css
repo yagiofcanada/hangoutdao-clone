@@ -15,6 +15,7 @@ body {
 .container {
   max-width: 1240px;
   margin: 0px auto;
+  overflow-x: hidden;
 }
 
 ul {
@@ -23,6 +24,59 @@ ul {
 
 a {
   text-decoration: none;
+}
+
+.cta {
+  border-radius: 5px;
+  background-color: #8AFE8F;
+  padding: 0.5em 1em;
+  font-weight: 500;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+}
+.cta a {
+  color: black;
+}
+
+.cta-inverse {
+  border-radius: 5px;
+  background-color: #2E4C41;
+  padding: 0.5em 1em;
+  font-weight: 500;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+}
+.cta-inverse a {
+  color: #8AFE8F;
+}
+
+.cta-black {
+  border-radius: 5px;
+  background-color: black;
+  padding: 0.5em 1em;
+  font-weight: 500;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+}
+.cta-black a {
+  color: white;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.text-green {
+  color: #8AFE8F;
+}
+
+.row {
+  padding: 2% 0;
+  min-height: 100vh;
 }
 
 header .container {
@@ -48,12 +102,35 @@ header .container .menu li {
 header .container .menu li_hover {
   cursor: pointer;
 }
-header .container .cta {
-  border-radius: 5px;
-  background-color: #8AFE8F;
-  padding: 0.5em 1em;
-  font-weight: 600;
-}
 header .container .cta a {
   color: black;
+}
+
+.banner .banner-left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  grid-column: 1/span 3;
+}
+.banner .banner-left .cta-inverse {
+  padding: 2% 4%;
+}
+.banner .banner-left .cta-inverse a {
+  text-transform: uppercase;
+  font-size: 0.7em;
+  font-weight: 700;
+}
+.banner .banner-left h1 {
+  font-size: 3.5rem;
+  line-height: 1em;
+}
+.banner .banner-left p {
+  font-size: 1.23em;
+}
+.banner .banner-right {
+  grid-column: 4/span 2;
+}
+.banner .banner-right img {
+  width: 40em;
 }
