@@ -34,6 +34,9 @@ a {
   max-width: -webkit-fit-content;
   max-width: -moz-fit-content;
   max-width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .cta a {
   color: black;
@@ -47,6 +50,9 @@ a {
   max-width: -webkit-fit-content;
   max-width: -moz-fit-content;
   max-width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .cta-inverse a {
   color: #8AFE8F;
@@ -60,6 +66,9 @@ a {
   max-width: -webkit-fit-content;
   max-width: -moz-fit-content;
   max-width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .cta-black a {
   color: white;
@@ -77,6 +86,10 @@ a {
 .row {
   padding: 2% 0;
   min-height: 100vh;
+}
+
+.bg-blue {
+  background-color: #002851;
 }
 
 header .container {
@@ -133,4 +146,82 @@ header .container .cta a {
 }
 .banner .banner-right img {
   width: 40em;
+}
+
+.about {
+  padding: 4.5em 0;
+}
+.about .about-text {
+  text-align: center;
+  padding-bottom: 5em;
+}
+.about .about-text p:first-child {
+  font-size: 1em;
+  font-weight: 600;
+}
+.about .about-text h1 {
+  font-size: 3em;
+  font-weight: 800;
+  padding-bottom: 0.3em;
+}
+.about .about-text p:last-child {
+  font-size: 1.2em;
+  line-height: 1.5em;
+}
+.about .about-grid {
+  text-align: center;
+  padding: 0 6em 5em;
+  justify-content: center;
+  align-items: center;
+  gap: 4em;
+}
+.about .about-grid .item-one, .about .about-grid .item-three, .about .about-grid .item-two {
+  grid-column: span 2;
+}
+.about .about-grid .item-one h3, .about .about-grid .item-three h3, .about .about-grid .item-two h3 {
+  font-size: 1.3em;
+  padding-bottom: 2%;
+}
+.about .about-grid .item-one h2, .about .about-grid .item-three h2, .about .about-grid .item-two h2 {
+  padding-bottom: 1%;
+}
+.about .about-grid .item-one p, .about .about-grid .item-three p, .about .about-grid .item-two p {
+  font-size: 0.9em;
+  line-height: 1.5em;
+}
+.about .about-card {
+  border-radius: 7px;
+  background-color: white;
+  padding: 4em 2em;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  background-image: url(../images/bg-patterns.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.about .about-card .about-card-text {
+  grid-column: span 4;
+  color: black;
+  padding-right: 6em;
+}
+.about .about-card .about-card-text h3 {
+  font-size: 1.5em;
+  font-weight: 800;
+  padding-bottom: 0.3em;
+}
+.about .about-card .about-card-text p {
+  font-weight: 500;
+}
+.about .about-card .about-buttons {
+  grid-column: 5/span 2;
+  display: flex;
+  gap: 1em;
+}
+.about .about-card .about-buttons a {
+  font-size: 0.8em;
+}
+.about .about-card .about-buttons img {
+  padding-right: 5px;
 }
