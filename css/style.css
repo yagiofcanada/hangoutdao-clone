@@ -320,3 +320,99 @@ header .container .menu li:hover {
 .benefits .benefits-right .benefits-card-three .benefits-card-three-images img {
   width: 60px;
 }
+
+.success {
+  padding: 3.5em 0;
+}
+.success .success-title {
+  text-align: center;
+}
+.success .success-title p:first-child {
+  font-weight: 600;
+}
+.success .success-title h1 {
+  font-size: 3em;
+  font-weight: 800;
+  padding-bottom: 0.3em;
+}
+.success .success-title p:last-child {
+  font-size: 1.3em;
+}
+.success .carousel {
+  padding-top: 4em;
+  position: relative;
+}
+.success .carousel button {
+  top: 50%;
+}
+.success .carousel .glider-dot {
+  width: 0.6em;
+  height: 0.6em;
+  margin: 6px;
+  margin-top: 1em;
+}
+.success .carousel .glider-dot:hover,
+.success .carousel .glider-dot:focus,
+.success .carousel .glider-dot.active {
+  background: #8AFE8F;
+}
+.success .carousel .carousel-item {
+  background-color: #0F1025;
+  border-radius: 5px;
+  margin-right: 2em;
+}
+.success .carousel .carousel-item .group-profit .nft-images {
+  background-color: black;
+  padding: 2em 4em;
+  display: flex;
+  gap: 0.9em;
+  justify-content: center;
+  border-radius: 5px;
+}
+.success .carousel .carousel-item .group-profit .nft-images img {
+  width: 3.3em;
+}
+.success .carousel .carousel-item .group-profit .group-profit-text {
+  padding: 3em 2em 5em;
+}
+.success .carousel .carousel-item .group-profit .group-profit-text .group-profit-top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.7em;
+}
+.success .carousel .carousel-item .group-profit .group-profit-text .group-profit-top .group-profit-top-left p {
+  font-size: 0.7em;
+  margin-bottom: 0.4em;
+}
+.success .carousel .carousel-item .group-profit .group-profit-text .group-profit-top .group-profit-top-left h4 {
+  font-size: 1.2em;
+}
+.success .carousel .carousel-item .group-profit .group-profit-text .group-profit-top .group-profit-top-right .cta {
+  padding: 0.5em;
+  border-radius: 7px;
+}
+.success .carousel .carousel-item .group-profit .group-profit-text .group-profit-bottom p {
+  font-size: 0.9em;
+  padding-right: 0.6em;
+}
+.success .carousel .carousel-item .story {
+  padding: 3em 2em 0em;
+}
+.success .carousel .carousel-item .story .top p:first-child {
+  font-size: 0.9em;
+  margin-bottom: 1em;
+  text-align: justify;
+  line-height: 1.4em;
+}
+.success .carousel .carousel-item .story .top p:last-child {
+  font-size: 0.8em;
+}
+.success .carousel .carousel-item .story .bottom {
+  display: flex;
+  align-items: center;
+  gap: 0.7em;
+  margin-top: 5em;
+}
+.success .carousel .carousel-item .story .bottom img {
+  width: 50px;
+}
