@@ -103,77 +103,77 @@ header .container .menu li:hover {
   cursor: pointer;
 }
 
-.banner .banner-left {
+#banner .banner-left {
   display: flex;
   flex-direction: column;
   gap: 20px;
   justify-content: center;
   grid-column: 1/span 3;
 }
-.banner .banner-left a {
+#banner .banner-left a {
   text-transform: uppercase;
   font-size: 0.7em;
   font-weight: 700;
 }
-.banner .banner-left .cta-inverse {
+#banner .banner-left .cta-inverse {
   padding: 2% 4%;
 }
-.banner .banner-left h1 {
+#banner .banner-left h1 {
   font-size: 3.5rem;
   line-height: 1em;
 }
-.banner .banner-left p {
+#banner .banner-left p {
   font-size: 1.23em;
 }
-.banner .banner-right {
+#banner .banner-right {
   grid-column: 4/span 2;
 }
-.banner .banner-right img {
+#banner .banner-right img {
   width: 40em;
 }
 
-.about {
+#about {
   padding: 4.5em 0;
 }
-.about .about-text {
+#about .about-text {
   text-align: center;
   padding-bottom: 5em;
 }
-.about .about-text p:first-child {
+#about .about-text p:first-child {
   font-size: 1em;
   font-weight: 600;
 }
-.about .about-text h1 {
+#about .about-text h1 {
   font-size: 3em;
   font-weight: 800;
   padding-bottom: 0.3em;
 }
-.about .about-text p:last-child {
+#about .about-text p:last-child {
   font-size: 1.2em;
   line-height: 1.5em;
 }
-.about .about-grid {
+#about .about-grid {
   text-align: center;
   padding: 0 6em 5em;
   justify-content: center;
   align-items: center;
   gap: 4em;
 }
-.about .about-grid .item-one, .about .about-grid .item-three, .about .about-grid .item-two {
+#about .about-grid .item-one, #about .about-grid .item-three, #about .about-grid .item-two {
   grid-column: span 2;
 }
-.about .about-grid .item-one h3, .about .about-grid .item-three h3, .about .about-grid .item-two h3 {
+#about .about-grid .item-one h3, #about .about-grid .item-three h3, #about .about-grid .item-two h3 {
   font-size: 1.3em;
   padding-bottom: 2%;
 }
-.about .about-grid .item-one h2, .about .about-grid .item-three h2, .about .about-grid .item-two h2 {
+#about .about-grid .item-one h2, #about .about-grid .item-three h2, #about .about-grid .item-two h2 {
   padding-bottom: 1%;
 }
-.about .about-grid .item-one p, .about .about-grid .item-three p, .about .about-grid .item-two p {
+#about .about-grid .item-one p, #about .about-grid .item-three p, #about .about-grid .item-two p {
   font-size: 0.9em;
   line-height: 1.5em;
 }
-.about .about-card {
+#about .about-card {
   border-radius: 7px;
   background-color: white;
   padding: 4em 2em;
@@ -183,74 +183,74 @@ header .container .menu li:hover {
   background-size: cover;
   background-position: center;
 }
-.about .about-card .about-card-text {
+#about .about-card .about-card-text {
   grid-column: span 4;
   color: black;
   padding-right: 6em;
 }
-.about .about-card .about-card-text h3 {
+#about .about-card .about-card-text h3 {
   font-size: 1.5em;
   font-weight: 800;
   padding-bottom: 0.3em;
 }
-.about .about-card .about-card-text p {
+#about .about-card .about-card-text p {
   font-weight: 500;
 }
-.about .about-card .about-buttons {
+#about .about-card .about-buttons {
   grid-column: 5/span 2;
   display: flex;
   gap: 1em;
   justify-content: space-around;
 }
-.about .about-card .about-buttons a {
+#about .about-card .about-buttons a {
   font-size: 0.8em;
 }
-.about .about-card .about-buttons img {
+#about .about-card .about-buttons img {
   padding-right: 10px;
 }
-.about .about-card .about-buttons .cta-black {
+#about .about-card .about-buttons .cta-black {
   background-color: #0b0c1c;
 }
-.about .about-card .about-buttons .cta-black:hover {
+#about .about-card .about-buttons .cta-black:hover {
   background-color: #002851;
   cursor: pointer;
 }
-.about .about-card .about-buttons .cta {
+#about .about-card .about-buttons .cta {
   border: 2px solid #8AFE8F;
 }
-.about .about-card .about-buttons .cta:hover {
+#about .about-card .about-buttons .cta:hover {
   background-color: rgba(138, 254, 143, 0.2);
   cursor: pointer;
 }
 
-.benefits {
+#benefits {
   padding: 7.5em 0;
   background-image: url(../images/left-pattern.svg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: left;
 }
-.benefits .row {
+#benefits .row {
   min-height: 50vh;
 }
-.benefits .grid {
+#benefits .grid {
   gap: 2em;
 }
-.benefits .benefits-left {
+#benefits .benefits-left {
   grid-column: span 3;
 }
-.benefits .benefits-left h3 {
+#benefits .benefits-left h3 {
   font-size: 1.6em;
   font-weight: 800;
   padding-bottom: 0.7em;
 }
-.benefits .benefits-left ul {
+#benefits .benefits-left ul {
   display: flex;
   flex-direction: column;
   gap: 1.5em;
   list-style-type: disc;
 }
-.benefits .benefits-right {
+#benefits .benefits-right {
   grid-column: span 3;
   background-image: url(../images/spiral.svg);
   background-repeat: no-repeat;
@@ -260,7 +260,7 @@ header .container .menu li:hover {
   grid-template-columns: repeat(12, 1fr);
   position: relative;
 }
-.benefits .benefits-right .first {
+#benefits .benefits-right .first {
   font-size: 0.9em;
   padding: 1em 3.3em;
   text-align: center;
@@ -268,7 +268,7 @@ header .container .menu li:hover {
   width: fit-content;
   grid-column: 7/13;
 }
-.benefits .benefits-right .benefits-card-one {
+#benefits .benefits-right .benefits-card-one {
   border-radius: 7px;
   background-color: #002851;
   width: fit-content;
@@ -283,10 +283,10 @@ header .container .menu li:hover {
   right: 3em;
   padding: 1em 2.5em;
 }
-.benefits .benefits-right .benefits-card-one .cta {
+#benefits .benefits-right .benefits-card-one .cta {
   padding: 0.5em;
 }
-.benefits .benefits-right .benefits-card-two {
+#benefits .benefits-right .benefits-card-two {
   border-radius: 7px;
   background-color: #002851;
   width: fit-content;
@@ -300,68 +300,68 @@ header .container .menu li:hover {
   gap: 1em;
   margin-bottom: 1em;
 }
-.benefits .benefits-right .benefits-card-two .card-two-right img {
+#benefits .benefits-right .benefits-card-two .card-two-right img {
   width: 60px;
   border-radius: 2px;
 }
-.benefits .benefits-right .benefits-card-three {
+#benefits .benefits-right .benefits-card-three {
   border-radius: 7px;
   background-color: #002851;
   width: fit-content;
   padding: 1em 2em;
   grid-column: 3/10;
 }
-.benefits .benefits-right .benefits-card-three .benefits-card-three-images {
+#benefits .benefits-right .benefits-card-three .benefits-card-three-images {
   margin-top: 1em;
   padding-bottom: 0.5em;
   display: flex;
   gap: 0.3em;
 }
-.benefits .benefits-right .benefits-card-three .benefits-card-three-images img {
+#benefits .benefits-right .benefits-card-three .benefits-card-three-images img {
   width: 60px;
 }
 
-.success {
+#success {
   padding: 3.5em 0;
 }
-.success .success-title {
+#success .success-title {
   text-align: center;
 }
-.success .success-title p:first-child {
+#success .success-title p:first-child {
   font-weight: 600;
 }
-.success .success-title h1 {
+#success .success-title h1 {
   font-size: 3em;
   font-weight: 800;
   padding-bottom: 0.3em;
 }
-.success .success-title p:last-child {
+#success .success-title p:last-child {
   font-size: 1.3em;
 }
-.success .carousel {
+#success .carousel {
   padding-top: 4em;
   position: relative;
 }
-.success .carousel button {
+#success .carousel button {
   top: 50%;
 }
-.success .carousel .glider-dot {
+#success .carousel .glider-dot {
   width: 0.6em;
   height: 0.6em;
   margin: 6px;
   margin-top: 1em;
 }
-.success .carousel .glider-dot:hover,
-.success .carousel .glider-dot:focus,
-.success .carousel .glider-dot.active {
+#success .carousel .glider-dot:hover,
+#success .carousel .glider-dot:focus,
+#success .carousel .glider-dot.active {
   background: #8AFE8F;
 }
-.success .carousel .carousel-item {
+#success .carousel .carousel-item {
   background-color: #0F1025;
   border-radius: 5px;
   margin-right: 2em;
 }
-.success .carousel .carousel-item .group-profit .nft-images {
+#success .carousel .carousel-item .group-profit .nft-images {
   background-color: black;
   padding: 2em 4em;
   display: flex;
@@ -369,55 +369,55 @@ header .container .menu li:hover {
   justify-content: center;
   border-radius: 5px;
 }
-.success .carousel .carousel-item .group-profit .nft-images img {
+#success .carousel .carousel-item .group-profit .nft-images img {
   width: 3.3em;
 }
-.success .carousel .carousel-item .group-profit .group-profit-text {
+#success .carousel .carousel-item .group-profit .group-profit-text {
   padding: 3em 2em 5em;
 }
-.success .carousel .carousel-item .group-profit .group-profit-text .group-profit-top {
+#success .carousel .carousel-item .group-profit .group-profit-text .group-profit-top {
   display: flex;
   justify-content: space-between;
   margin-bottom: 0.7em;
 }
-.success .carousel .carousel-item .group-profit .group-profit-text .group-profit-top .group-profit-top-left p {
+#success .carousel .carousel-item .group-profit .group-profit-text .group-profit-top .group-profit-top-left p {
   font-size: 0.7em;
   margin-bottom: 0.4em;
 }
-.success .carousel .carousel-item .group-profit .group-profit-text .group-profit-top .group-profit-top-left h4 {
+#success .carousel .carousel-item .group-profit .group-profit-text .group-profit-top .group-profit-top-left h4 {
   font-size: 1.2em;
 }
-.success .carousel .carousel-item .group-profit .group-profit-text .group-profit-top .group-profit-top-right .cta {
+#success .carousel .carousel-item .group-profit .group-profit-text .group-profit-top .group-profit-top-right .cta {
   padding: 0.5em;
   border-radius: 7px;
 }
-.success .carousel .carousel-item .group-profit .group-profit-text .group-profit-bottom p {
+#success .carousel .carousel-item .group-profit .group-profit-text .group-profit-bottom p {
   font-size: 0.9em;
   padding-right: 0.6em;
 }
-.success .carousel .carousel-item .story {
+#success .carousel .carousel-item .story {
   padding: 3em 2em 0em;
 }
-.success .carousel .carousel-item .story .top p:first-child {
+#success .carousel .carousel-item .story .top p:first-child {
   font-size: 0.9em;
   margin-bottom: 1em;
   text-align: justify;
   line-height: 1.4em;
 }
-.success .carousel .carousel-item .story .top p:last-child {
+#success .carousel .carousel-item .story .top p:last-child {
   font-size: 0.8em;
 }
-.success .carousel .carousel-item .story .bottom {
+#success .carousel .carousel-item .story .bottom {
   display: flex;
   align-items: center;
   gap: 0.7em;
   margin-top: 5em;
 }
-.success .carousel .carousel-item .story .bottom img {
+#success .carousel .carousel-item .story .bottom img {
   width: 50px;
 }
 
-.collab {
+#collab {
   padding: 4% 0 6.3%;
   text-align: center;
   background-color: white;
@@ -426,27 +426,27 @@ header .container .menu li:hover {
   background-size: cover;
   color: black;
 }
-.collab h1 {
+#collab h1 {
   font-size: 3em;
   font-weight: 900;
   margin-bottom: 0.5em;
   color: #0F1025;
 }
-.collab p {
+#collab p {
   font-size: 1.36em;
   margin-bottom: 2.5em;
 }
-.collab .images {
+#collab .images {
   display: flex;
   gap: 2.5em;
   justify-content: center;
 }
-.collab .images p {
+#collab .images p {
   margin-top: 0.4em;
   font-size: 0.87em;
 }
 
-.partners .container {
+#partners .container {
   background-color: black;
   margin-top: 5em;
   margin-bottom: 5em;
@@ -454,21 +454,21 @@ header .container .menu li:hover {
   padding: 3em;
   text-align: center;
 }
-.partners .container h1 {
+#partners .container h1 {
   font-size: 3em;
   font-weight: 900;
   margin-bottom: 0.3em;
 }
-.partners .container p {
+#partners .container p {
   font-size: 1.3em;
   margin-bottom: 2.5em;
 }
-.partners .container .images {
+#partners .container .images {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-.partners .container .images .left {
+#partners .container .images .left {
   background-image: url(../images/net.svg);
   background-repeat: no-repeat;
   background-size: contain;
@@ -477,10 +477,10 @@ header .container .menu li:hover {
   height: 70vh;
   text-align: center;
 }
-.partners .container .images .left img {
+#partners .container .images .left img {
   height: 100%;
 }
-.partners .container .images .right {
+#partners .container .images .right {
   position: relative;
   background-image: url(../images/net-dull.svg);
   background-repeat: no-repeat;
@@ -488,7 +488,7 @@ header .container .menu li:hover {
   background-position: center;
   padding: 4em;
 }
-.partners .container .images .right .hleft {
+#partners .container .images .right .hleft {
   bottom: 4%;
   left: 4%;
   z-index: 1;
@@ -496,14 +496,14 @@ header .container .menu li:hover {
   background: none;
   position: absolute;
 }
-.partners .container .images .right .middle {
+#partners .container .images .right .middle {
   top: 48%;
   left: 42%;
   width: 4em;
   z-index: 1;
   position: absolute;
 }
-.partners .container .images .right .right {
+#partners .container .images .right .right {
   background: none;
   width: 14em;
   right: -10%;
@@ -511,13 +511,13 @@ header .container .menu li:hover {
   z-index: 1;
   position: absolute;
 }
-.partners .container .images .right .gridlol {
+#partners .container .images .right .gridlol {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 3em;
   align-items: center;
 }
-.partners .container .images .right .gridlol img {
+#partners .container .images .right .gridlol img {
   position: relative;
   border: 5px #002851 solid;
   background-color: #002851;
