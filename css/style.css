@@ -416,3 +416,32 @@ header .container .menu li:hover {
 .success .carousel .carousel-item .story .bottom img {
   width: 50px;
 }
+
+.collab {
+  padding: 4% 0 6.3%;
+  text-align: center;
+  background-color: white;
+  background-image: url(../images/bg-patterns.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: black;
+}
+.collab h1 {
+  font-size: 3em;
+  font-weight: 900;
+  margin-bottom: 0.5em;
+  color: #0F1025;
+}
+.collab p {
+  font-size: 1.36em;
+  margin-bottom: 2.5em;
+}
+.collab .images {
+  display: flex;
+  gap: 2.5em;
+  justify-content: center;
+}
+.collab .images p {
+  margin-top: 0.4em;
+  font-size: 0.87em;
+}
