@@ -523,3 +523,43 @@ header .container .menu li:hover {
   background-color: #002851;
   border-radius: 5px;
 }
+
+#team h2 {
+  font-size: 1.8em;
+  font-weight: 900;
+  margin-bottom: 0.7em;
+}
+#team p {
+  font-size: 1.1em;
+  width: 50%;
+  line-height: 1.6em;
+  font-weight: 400;
+  margin-bottom: 4em;
+}
+#team .team-images {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1em;
+  padding-bottom: 2em;
+}
+#team .team-images .item {
+  background-color: #002851;
+  border-radius: 20px;
+}
+#team .team-images .item img.firstI {
+  width: 100%;
+}
+#team .team-images .item .text {
+  padding: 0.9em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#team .team-images .item .text img {
+  margin-right: 7px;
+}
+#team .team-images .item .text a {
+  color: white;
+  font-weight: 700;
+  font-size: 0.9em;
+}
