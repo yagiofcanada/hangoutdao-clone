@@ -445,3 +445,81 @@ header .container .menu li:hover {
   margin-top: 0.4em;
   font-size: 0.87em;
 }
+
+.partners .container {
+  background-color: black;
+  margin-top: 5em;
+  margin-bottom: 5em;
+  border-radius: 7px;
+  padding: 3em;
+  text-align: center;
+}
+.partners .container h1 {
+  font-size: 3em;
+  font-weight: 900;
+  margin-bottom: 0.3em;
+}
+.partners .container p {
+  font-size: 1.3em;
+  margin-bottom: 2.5em;
+}
+.partners .container .images {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.partners .container .images .left {
+  background-image: url(../images/net.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  position: relative;
+  height: 70vh;
+  text-align: center;
+}
+.partners .container .images .left img {
+  height: 100%;
+}
+.partners .container .images .right {
+  position: relative;
+  background-image: url(../images/net-dull.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  padding: 4em;
+}
+.partners .container .images .right .hleft {
+  bottom: 4%;
+  left: 4%;
+  z-index: 1;
+  width: 4em;
+  background: none;
+  position: absolute;
+}
+.partners .container .images .right .middle {
+  top: 48%;
+  left: 42%;
+  width: 4em;
+  z-index: 1;
+  position: absolute;
+}
+.partners .container .images .right .right {
+  background: none;
+  width: 14em;
+  right: -10%;
+  top: -10%;
+  z-index: 1;
+  position: absolute;
+}
+.partners .container .images .right .gridlol {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3em;
+  align-items: center;
+}
+.partners .container .images .right .gridlol img {
+  position: relative;
+  border: 5px #002851 solid;
+  background-color: #002851;
+  border-radius: 5px;
+}
