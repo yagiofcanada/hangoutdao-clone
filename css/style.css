@@ -1,5 +1,600 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  background-color: #0F1025;
+  font-family: "Outfit", sans-serif;
+  font-size: 16px;
+  color: white;
+}
+
+.container {
+  max-width: 1240px;
+  margin: 0px auto;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.cta {
+  border-radius: 5px;
+  background-color: #8AFE8F;
+  padding: 0.5em 1em;
+  font-weight: 500;
+  max-width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+
+.cta-inverse {
+  border-radius: 5px;
+  background-color: #2E4C41;
+  padding: 0.5em 1em;
+  font-weight: 500;
+  max-width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #8AFE8F;
+}
+
+.cta-black {
+  border-radius: 5px;
+  background-color: black;
+  padding: 0.5em 1em;
+  font-weight: 500;
+  max-width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.text-green {
+  color: #8AFE8F;
+}
+
+.row {
+  padding: 2% 0;
+  min-height: 100vh;
+}
+
+.bg-blue {
+  background-color: #002851;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1em;
+  font-weight: 600;
+}
+header .container .logo img {
+  width: 100%;
+  height: 50px;
+}
+header .container .menu ul {
+  display: flex;
+}
+header .container .menu li {
+  margin-right: 2em;
+}
+header .container .menu li a {
+  color: white;
+}
+header .container .menu li:hover {
+  cursor: pointer;
+}
+
+#banner .banner-left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  grid-column: 1/span 3;
+}
+#banner .banner-left a {
+  text-transform: uppercase;
+  font-size: 0.7em;
+  font-weight: 700;
+}
+#banner .banner-left .cta-inverse {
+  padding: 2% 4%;
+}
+#banner .banner-left h1 {
+  font-size: 3.5rem;
+  line-height: 1em;
+}
+#banner .banner-left p {
+  font-size: 1.23em;
+}
+#banner .banner-right {
+  grid-column: 4/span 2;
+}
+#banner .banner-right img {
+  width: 40em;
+}
+
+#about {
+  padding: 4.5em 0;
+}
+#about .about-text {
+  text-align: center;
+  padding-bottom: 5em;
+}
+#about .about-text p:first-child {
+  font-size: 1em;
+  font-weight: 600;
+}
+#about .about-text h1 {
+  font-size: 3em;
+  font-weight: 800;
+  padding-bottom: 0.3em;
+}
+#about .about-text p:last-child {
+  font-size: 1.2em;
+  line-height: 1.5em;
+}
+#about .about-grid {
+  text-align: center;
+  padding: 0 6em 5em;
+  justify-content: center;
+  align-items: center;
+  gap: 4em;
+}
+#about .about-grid .item-one, #about .about-grid .item-three, #about .about-grid .item-two {
+  grid-column: span 2;
+}
+#about .about-grid .item-one h3, #about .about-grid .item-three h3, #about .about-grid .item-two h3 {
+  font-size: 1.3em;
+  padding-bottom: 2%;
+}
+#about .about-grid .item-one h2, #about .about-grid .item-three h2, #about .about-grid .item-two h2 {
+  padding-bottom: 1%;
+}
+#about .about-grid .item-one p, #about .about-grid .item-three p, #about .about-grid .item-two p {
+  font-size: 0.9em;
+  line-height: 1.5em;
+}
+#about .about-card {
+  border-radius: 7px;
+  background-color: white;
+  padding: 4em 2em;
+  max-width: fit-content;
+  background-image: url(../images/bg-patterns.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+#about .about-card .about-card-text {
+  grid-column: span 4;
+  color: black;
+  padding-right: 6em;
+}
+#about .about-card .about-card-text h3 {
+  font-size: 1.5em;
+  font-weight: 800;
+  padding-bottom: 0.3em;
+}
+#about .about-card .about-card-text p {
+  font-weight: 500;
+}
+#about .about-card .about-buttons {
+  grid-column: 5/span 2;
+  display: flex;
+  gap: 1em;
+  justify-content: space-around;
+}
+#about .about-card .about-buttons a {
+  font-size: 0.8em;
+}
+#about .about-card .about-buttons img {
+  padding-right: 10px;
+}
+#about .about-card .about-buttons .cta-black {
+  background-color: #0b0c1c;
+}
+#about .about-card .about-buttons .cta-black:hover {
+  background-color: #002851;
+  cursor: pointer;
+}
+#about .about-card .about-buttons .cta {
+  border: 2px solid #8AFE8F;
+}
+#about .about-card .about-buttons .cta:hover {
+  background-color: rgba(138, 254, 143, 0.2);
+  cursor: pointer;
+}
+
+#benefits {
+  padding: 7.5em 0;
+  background-image: url(../images/left-pattern.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left;
+}
+#benefits .row {
+  min-height: 50vh;
+}
+#benefits .grid {
+  gap: 2em;
+}
+#benefits .benefits-left {
+  grid-column: span 3;
+}
+#benefits .benefits-left h3 {
+  font-size: 1.6em;
+  font-weight: 800;
+  padding-bottom: 0.7em;
+}
+#benefits .benefits-left ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  list-style-type: disc;
+}
+#benefits .benefits-right {
+  grid-column: span 3;
+  background-image: url(../images/spiral.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top center;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  position: relative;
+}
+#benefits .benefits-right .first {
+  font-size: 0.9em;
+  padding: 1em 3.3em;
+  text-align: center;
+  background-color: #0F1025;
+  width: fit-content;
+  grid-column: 7/13;
+}
+#benefits .benefits-right .benefits-card-one {
+  border-radius: 7px;
+  background-color: #002851;
+  width: fit-content;
+  padding: 1em 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  align-items: center;
+  grid-column: 1/7;
+  position: absolute;
+  top: 1em;
+  right: 3em;
+  padding: 1em 2.5em;
+}
+#benefits .benefits-right .benefits-card-one .cta {
+  padding: 0.5em;
+}
+#benefits .benefits-right .benefits-card-two {
+  border-radius: 7px;
+  background-color: #002851;
+  width: fit-content;
+  padding: 1em 2em;
+  grid-column: 7/13;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  gap: 1em;
+  margin-bottom: 1em;
+}
+#benefits .benefits-right .benefits-card-two .card-two-right img {
+  width: 60px;
+  border-radius: 2px;
+}
+#benefits .benefits-right .benefits-card-three {
+  border-radius: 7px;
+  background-color: #002851;
+  width: fit-content;
+  padding: 1em 2em;
+  grid-column: 3/10;
+}
+#benefits .benefits-right .benefits-card-three .benefits-card-three-images {
+  margin-top: 1em;
+  padding-bottom: 0.5em;
+  display: flex;
+  gap: 0.3em;
+}
+#benefits .benefits-right .benefits-card-three .benefits-card-three-images img {
+  width: 60px;
+}
+
+#success {
+  padding: 3.5em 0;
+}
+#success .success-title {
+  text-align: center;
+}
+#success .success-title p:first-child {
+  font-weight: 600;
+}
+#success .success-title h1 {
+  font-size: 3em;
+  font-weight: 800;
+  padding-bottom: 0.3em;
+}
+#success .success-title p:last-child {
+  font-size: 1.3em;
+}
+#success .carousel {
+  padding-top: 4em;
+  position: relative;
+}
+#success .carousel button {
+  top: 50%;
+}
+#success .carousel .glider-dot {
+  width: 0.6em;
+  height: 0.6em;
+  margin: 6px;
+  margin-top: 1em;
+}
+#success .carousel .glider-dot:hover,
+#success .carousel .glider-dot:focus,
+#success .carousel .glider-dot.active {
+  background: #8AFE8F;
+}
+#success .carousel .carousel-item {
+  background-color: #0F1025;
+  border-radius: 5px;
+  margin-right: 2em;
+}
+#success .carousel .carousel-item .group-profit .nft-images {
+  background-color: black;
+  padding: 2em 4em;
+  display: flex;
+  gap: 0.9em;
+  justify-content: center;
+  border-radius: 5px;
+}
+#success .carousel .carousel-item .group-profit .nft-images img {
+  width: 3.3em;
+}
+#success .carousel .carousel-item .group-profit .group-profit-text {
+  padding: 3em 2em 5em;
+}
+#success .carousel .carousel-item .group-profit .group-profit-text .group-profit-top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.7em;
+}
+#success .carousel .carousel-item .group-profit .group-profit-text .group-profit-top .group-profit-top-left p {
+  font-size: 0.7em;
+  margin-bottom: 0.4em;
+}
+#success .carousel .carousel-item .group-profit .group-profit-text .group-profit-top .group-profit-top-left h4 {
+  font-size: 1.2em;
+}
+#success .carousel .carousel-item .group-profit .group-profit-text .group-profit-top .group-profit-top-right .cta {
+  padding: 0.5em;
+  border-radius: 7px;
+}
+#success .carousel .carousel-item .group-profit .group-profit-text .group-profit-bottom p {
+  font-size: 0.9em;
+  padding-right: 0.6em;
+}
+#success .carousel .carousel-item .story {
+  padding: 3em 2em 0em;
+}
+#success .carousel .carousel-item .story .top p:first-child {
+  font-size: 0.9em;
+  margin-bottom: 1em;
+  text-align: justify;
+  line-height: 1.4em;
+}
+#success .carousel .carousel-item .story .top p:last-child {
+  font-size: 0.8em;
+}
+#success .carousel .carousel-item .story .bottom {
+  display: flex;
+  align-items: center;
+  gap: 0.7em;
+  margin-top: 5em;
+}
+#success .carousel .carousel-item .story .bottom img {
+  width: 50px;
+}
+
+#collab {
+  padding: 4% 0 6.3%;
+  text-align: center;
+  background-color: white;
+  background-image: url(../images/bg-patterns.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: black;
+}
+#collab h1 {
+  font-size: 3em;
+  font-weight: 900;
+  margin-bottom: 0.5em;
+  color: #0F1025;
+}
+#collab p {
+  font-size: 1.36em;
+  margin-bottom: 2.5em;
+}
+#collab .images {
+  display: flex;
+  gap: 2.5em;
+  justify-content: center;
+}
+#collab .images p {
+  margin-top: 0.4em;
+  font-size: 0.87em;
+}
+
+#partners .container {
+  background-color: black;
+  margin-top: 5em;
+  margin-bottom: 5em;
+  border-radius: 7px;
+  padding: 3em;
+  text-align: center;
+}
+#partners .container h1 {
+  font-size: 3em;
+  font-weight: 900;
+  margin-bottom: 0.3em;
+}
+#partners .container p {
+  font-size: 1.3em;
+  margin-bottom: 2.5em;
+}
+#partners .container .images {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#partners .container .images .left {
+  background-image: url(../images/net.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  position: relative;
+  height: 70vh;
+  text-align: center;
+}
+#partners .container .images .left img {
+  height: 100%;
+}
+#partners .container .images .right {
+  position: relative;
+  background-image: url(../images/net-dull.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  padding: 4em;
+}
+#partners .container .images .right .hleft {
+  bottom: 4%;
+  left: 4%;
+  z-index: 1;
+  width: 4em;
+  background: none;
+  position: absolute;
+}
+#partners .container .images .right .middle {
+  top: 48%;
+  left: 42%;
+  width: 4em;
+  z-index: 1;
+  position: absolute;
+}
+#partners .container .images .right .right {
+  background: none;
+  width: 14em;
+  right: -10%;
+  top: -10%;
+  z-index: 1;
+  position: absolute;
+}
+#partners .container .images .right .gridlol {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3em;
+  align-items: center;
+}
+#partners .container .images .right .gridlol img {
+  position: relative;
+  border: 5px #002851 solid;
+  background-color: #002851;
+  border-radius: 5px;
+}
+
+#team h2 {
+  font-size: 1.8em;
+  font-weight: 900;
+  margin-bottom: 0.7em;
+}
+#team p {
+  font-size: 1.1em;
+  width: 50%;
+  line-height: 1.6em;
+  font-weight: 400;
+  margin-bottom: 4em;
+}
+#team .team-images {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1em;
+  padding-bottom: 1em;
+}
+#team .team-images .item {
+  background-color: #002851;
+  border-radius: 20px;
+}
+#team .team-images .item img.firstI {
+  width: 100%;
+}
+#team .team-images .item .text {
+  padding: 0.9em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#team .team-images .item .text img {
+  margin-right: 7px;
+}
+#team .team-images .item .text a {
+  color: white;
+  font-weight: 700;
+  font-size: 0.9em;
+}
+
+footer .container {
+  border-top: 4px #002851 solid;
+  padding-top: 3em;
+  padding-bottom: 1em;
+  text-align: center;
+}
+footer .container .footer-icons {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  margin-bottom: 2em;
+}
+footer .container .footer-icons a {
+  padding: 0.6em;
+}
+footer .container .footer-icons a_hover {
+  cursor: pointer;
+}
+footer .container .footer-icons a img {
+  width: 38px;
+}
+footer .container a.dev {
+  color: #8AFE8F;
+}
+footer .container p {
+  font-size: 0.9em;
+  font-weight: 700;
+  padding-bottom: 0.5em;
+}
+footer .container span p {
+  font-size: 0.85em;
+  margin-top: 1em;
+  font-weight: 500;
 }
