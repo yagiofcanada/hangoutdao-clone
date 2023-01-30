@@ -5,6 +5,11 @@
   box-sizing: border-box;
 }
 
+:root {
+  --animate-duration: 1500ms;
+  --animate-delay: 0.5s;
+}
+
 body {
   background-color: #0F1025;
   font-family: "Outfit", sans-serif;
@@ -14,6 +19,7 @@ body {
 
 .container {
   width: 90%;
+  max-width: 1230px;
   margin: 0px auto;
 }
 
@@ -113,6 +119,9 @@ header .container .menu li:hover {
   text-transform: uppercase;
   font-size: 0.7em;
   font-weight: 700;
+}
+#banner .banner-left a span {
+  --animate-duration: 2800ms;
 }
 #banner .banner-left .cta-inverse {
   padding: 2% 4%;
