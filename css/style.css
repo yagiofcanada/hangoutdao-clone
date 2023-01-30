@@ -709,7 +709,8 @@ footer .container span p {
   }
   #banner .banner-right {
     grid-column: 1/span 7;
-    margin-top: 7%;
+    margin-top: 10%;
+    margin-bottom: 7%;
   }
   #banner .banner-right img {
     width: 100%;
